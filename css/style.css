@@ -1,0 +1,58 @@
+/*style.css*/
+
+*{
+	transition:all .5s ease;
+}
+
+@font-face{
+	font-family: "nms font";
+	src: url('../font/geonms-webfont.ttf');
+}
+
+body{
+	font-family: "nms font", sans-serif !important;
+	background-color: #3E544F;
+}
+
+header{
+	text-align: center;
+	background-image: url('../images/banner.png');
+	background-size: cover;
+	background-position: center;
+	min-height: 200px;
+	padding-top: 20px;
+}
+
+header h1{
+	font-size: 60pt;
+	color: #3E544F;
+	text-shadow: 0 0 10px white;
+}
+
+#resources{
+	text-align: center;
+}
+
+.resource{
+	height: 70px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.resource > img{
+	margin: auto;
+}
+
+@media only screen and (max-width: 768px){
+	header h1{
+	font-size: 40pt;
+	}
+}
+
+
+@media only screen and (max-width: 480px){
+	header h1{
+	font-size: 30pt;
+	}
+}
