@@ -10,7 +10,13 @@
 	<body>
 		
 		<header>
-		 <h1>NO MAN'S DATA</h1>
+		<div class="roundedSquare">
+		</div>
+		<div class="outline col-sm-11">
+		<h1>NO MAN'S DATA</h1>
+		</div>
+		<div class="roundedSquare">
+		</div>
 		</header>
 		<main>
 		
@@ -25,6 +31,7 @@
 				
 				<div class="resource col-sm-1 col-xs-3">
 					<img src="icons/<?php echo $image ?>">
+					<h6><?php echo $image ?></h6>
 				</div>
 			<?php } ?>
 		</div>

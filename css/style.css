@@ -1,7 +1,7 @@
 /*style.css*/
 
 *{
-	transition:all .5s ease;
+	transition: all .5s ease;
 }
 
 @font-face{
@@ -30,6 +30,9 @@ header h1{
 }
 
 #resources{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 300;
+	font-size: 30pt;
 	text-align: center;
 }
 
@@ -40,19 +43,41 @@ header h1{
 	padding: 0;
 }
 
+.resource h6{
+	display: none;
+	width: 200%;
+	color: white;
+	background: linear-gradient(to right, black, transparent);
+	text-align: left;
+	padding-top: 5px;
+	padding-left: 5px;
+}
+
+.resource img:hover+h6{
+	position: relative;
+	display: block;
+	z-index: 3;
+}
+
 .resource > img{
 	margin: auto;
 }
 
+.outline{
+	margin: 0 4.15%;
+	border: 14px solid transparent;
+	border-image: url('../images/frontBorder.png') 20%;
+}
+
 @media only screen and (max-width: 768px){
 	header h1{
-	font-size: 40pt;
+		font-size: 40pt;
 	}
 }
 
 
 @media only screen and (max-width: 480px){
 	header h1{
-	font-size: 30pt;
+		font-size: 30pt;
 	}
 }
