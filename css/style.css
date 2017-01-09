@@ -1,7 +1,7 @@
 /*style.css*/
 
 *{
-	transition: all .5s ease;
+	transition: all .2s ease;
 }
 
 @font-face{
@@ -34,12 +34,16 @@ header h1{
 	font-weight: 300;
 	font-size: 30pt;
 	text-align: center;
+	max-width: 1200px;
+	margin: auto;
+	margin-top: 20px;
+	overflow: hidden;
 }
 
 .resource{
-	height: 70px;
-	margin-top: 10px;
-	margin-bottom: 10px;
+	height: 90px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	padding: 0;
 }
 
@@ -61,6 +65,8 @@ header h1{
 
 .resource > img{
 	margin: auto;
+	width: auto;
+	height: 100%;
 }
 
 .outline{
@@ -69,9 +75,37 @@ header h1{
 	border-image: url('../images/frontBorder.png') 20%;
 }
 
-@media only screen and (max-width: 768px){
+#elementDisplay{
+	position: fixed;
+	top: 10%;
+	left: 25%;
+	right: 25%;
+	width: 50%;
+	padding: 20px;
+	color: white;
+	background-color: rgba(0,0,0,0.5);
+}
+
+#elementDisplay > img{
+	text-align: center;
+	width: 80% !important;
+	margin: 10%;
+	height: auto !important;
+	max-width: 200px;
+}
+
+#elementDisplay h1{
+	border-bottom: 2px solid white;
+}
+
+@media only screen and (max-width: 992px){
 	header h1{
 		font-size: 40pt;
+	}
+	
+	#elements2{
+		clear: both;
+		padding-top: 50px;
 	}
 }
 
@@ -79,5 +113,16 @@ header h1{
 @media only screen and (max-width: 480px){
 	header h1{
 		font-size: 30pt;
+	}
+	
+	#elements2{
+		padding-top: 20px;
+	}
+	
+	.resource{
+		height: 60px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		padding: 0;
 	}
 }
