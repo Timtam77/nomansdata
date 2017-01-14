@@ -33,35 +33,39 @@
 			$secondTable = $connect->query($getAllSecondTable);
 			$thirdTable = $connect->query($getAllThirdTable);
 			?>
+			
 			<div id="elements" class="col-md-7 col-md-offset-0 col-sm-10 col-sm-offset-1">
+			<h1>Elements</h1>
 			<?php foreach($firstTable as $element){ ?>
 				
 				<div class="resource col-sm-2 col-xs-2">
+					<h1><?php echo $element['elementName'] ?></h1>
 					<img src="icons/<?php echo $element['elementImage'] ?>">
-					<h6><?php echo $element['elementName'] ?></h6>
 				</div>
 				
 			<?php } ?>
 			</div>
 			<div id="elements2" class="col-md-5 col-md-offset-0 col-sm-8 col-sm-offset-2">
+			<h1>Resources</h1>
 			<?php foreach($secondTable as $element){ ?>
 				<div class="resource col-sm-3 col-xs-3">
+					<h1><?php echo $element['elementName'] ?></h1>
 					<?php if($element['elementImage'] != null){ ?>
 					<img src="icons/<?php echo $element['elementImage'] ?>">
 					<?php } ?>
-					<h6><?php echo $element['elementName'] ?></h6>
 				</div>
 				
 			<?php } ?>
 			</div>
 			
 			<div id="elements3" class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+			<h1>Rare Elements</h1>
 				<?php foreach($thirdTable as $element){ ?>
 					<div class="resource col-sm-2 col-xs-2">
+						<h1><?php echo $element['elementName'] ?></h1>
 						<?php if($element['elementImage'] != null){ ?>
 						<img src="icons/<?php echo $element['elementImage'] ?>">
 						<?php } ?>
-						<h6><?php echo $element['elementName'] ?></h6>
 				</div>
 				
 			<?php } ?>

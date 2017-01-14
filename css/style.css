@@ -47,7 +47,7 @@ header h1{
 	padding: 0;
 }
 
-.resource h6{
+.resource h1{
 	display: none;
 	width: 200%;
 	color: white;
@@ -66,7 +66,7 @@ header h1{
 .resource > img{
 	margin: auto;
 	width: auto;
-	height: 100%;
+	height: 80%;
 }
 
 .outline{
@@ -76,6 +76,7 @@ header h1{
 }
 
 #elementDisplay{
+	display: none;
 	position: fixed;
 	top: 10%;
 	left: 25%;
@@ -84,18 +85,26 @@ header h1{
 	padding: 20px;
 	color: white;
 	background-color: rgba(0,0,0,0.5);
+	transition: height .5s ease;
+	overflow: hidden;
 }
 
 #elementDisplay > img{
 	text-align: center;
 	width: 80% !important;
-	margin: 10%;
 	height: auto !important;
 	max-width: 200px;
 }
 
 #elementDisplay h1{
 	border-bottom: 2px solid white;
+}
+
+#elements h1, #elements2 h1, #elements3 h1{
+	color: #ffffff;
+	font-family: "nms font", sans-serif !important;
+	border-bottom: 2px solid white;
+	margin: 20px 0;
 }
 
 @media only screen and (max-width: 992px){
@@ -105,7 +114,11 @@ header h1{
 	
 	#elements2{
 		clear: both;
-		padding-top: 50px;
+	}
+	
+	#elements3 {
+		clear: both;
+		
 	}
 }
 
@@ -115,14 +128,16 @@ header h1{
 		font-size: 30pt;
 	}
 	
-	#elements2{
-		padding-top: 20px;
-	}
-	
 	.resource{
 		height: 60px;
 		margin-top: 2px;
 		margin-bottom: 2px;
 		padding: 0;
+	}
+	
+	#elementDisplay{
+		width: 80%;
+		left: 10%;
+		right: 10%;
 	}
 }
